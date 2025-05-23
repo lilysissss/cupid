@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+   
+   <link rel="icon" type="image" href="logo.png">
+    <title>My cart ✨💞⸝⸝˘◡˘♡</title>
+    <style>
+
+        body{
+          font-family: Delius;
+     }
+
+           .empty {
+      text-align: center;
+      color: #4d4c4c;
+      margin-top: 40px;
+      font-size: 25px;;
+    }
+       
+   
+     .container {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 30px;
+      margin-top: 50px;
+      padding-bottom: 100px;
+      background: #ffcad4;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.424);
+     
+    }
+    nav {
+            background-color: #ffbac7;
+            position:sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type:none;
+            padding: 2rem 0;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+            position:relative;
+        }
+        nav ul li a {
+            color:#000000;
+            text-decoration: none;
+            font-size: 2.1rem;
+            font-weight: 500;
+            padding: 0.8rem 1.3rem;
+            transition: all 0.3s ease;
+            border-radius: 20px;
+            font-family: Balsamiq Sans;
+        }
+        nav ul li a:hover {
+            background-color: rgb(203, 85,130);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.621);
+        }
+        nav ul li a::after{
+            content: "";
+            position:absolute;
+            width:0;
+            height: 6px;
+            bottom: 0;
+            left:0;
+            transition: 0.3s ease;
+        }
+        nav ul li a:hover::after {
+            width:100%;
+        }
+        @media screen and (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-list li a {
+        font-size: 16px;
+        padding: 8px 12px;
+        width: 100%;
+        display: block;
+    }
+}
+        .navlogo {
+            display:flex;
+            width:150px;
+            height:50px;
+        }
+        
+        .btnchearcart {
+          padding: 20px;
+          text-align: center;
+          border-radius: 20px;
+          /* margin-right: 200px;
+          margin-left: 50px; */
+          /* float: right; */
+          margin-top: 20px;
+          font-family: Delius;
+          border: none;
+          font-size: 17px;
+          background-color: #ffffff;
+
+
+        }
+
+        .centerbutton {
+          display: flex;
+          flex-wrap: nowrap;
+          
+          gap: 20px;
+          justify-content: center;
+        }
+
+        .btnchearcart:hover {
+          background-color: #f4abc7;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.621);
+        }
+
+        .btnshopping {
+          padding: 20px;
+          /* margin-left: 200px;
+          margin-right: 50px; */
+          border-radius: 20px;
+          margin-top: 20px;
+          text-decoration: none;
+          color: #000000;
+          background-color: #ffffff;
+          /* float: left; */
+          font-size: 17px;;
+        }
+
+        .btnshopping:hover {
+          background-color: #f4abc7;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.621);
+        }
+       
+
+
+
+</style>
+</head>
+<body style="background-color: #ffe5d9;">
+ <div>
+    <nav>    
+    <ul>
+        <li ><a href="home.html">Home</a></li>
+        <li><a href="menunavi.html">Menu</a></li>
+        <li><a href="contact2.html">Contact</a></li>
+        </a></li>
+    </ul>
+    </nav>
+    </div>
+    <header>
+    <h1 style=" text-align: center;
+      margin-bottom: 30px;
+      margin-top: 50px;
+      font-size: 45px;;">My Cart</h1>
+  </header>
+
+  <div class="container">
+    <ul style="list-style: none;
+      padding: 0; font-size: 25px;" id="cart-items"></ul>
+    <p class="empty" id="empty-message">Your cart is empty.</p>
+    <p id="total-price" style="font-weight: bold; font-size: 2rem; text-align: center;"></p>
+<div class="centerbutton">
+    <a class="btnshopping" href="menunavi.html">Continue Shopping</a>
+
+    <button class="btnchearcart"onclick="clearCart()">Clear Cart</button>
+    
+      <a href="order.html"> <button class="btnchearcart" type="submit">Order</button> </a> 
+    
+    </div>
+  </div>
+
+
+
+   <script>
+    const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const list = document.getElementById("cart-items");
+    const emptyMessage = document.getElementById("empty-message");
+    const totalPriceElement = document.getElementById("total-price");
+
+    let total = 0;
+
+    if (cartItems.length > 0) {
+      emptyMessage.style.display = "none";
+      cartItems.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - $${item.price}`;
+        list.appendChild(li);
+        total += item.price;
+      });
+      totalPriceElement.textContent = `Total: $${total.toFixed(2)}`;
+    }
+
+    function clearCart() {
+      localStorage.removeItem("cart");  // Clear cart from localStorage
+      document.getElementById("cart-items").innerHTML = "";  // Clear displayed items
+      document.getElementById("total-price").textContent = "Total: $0.00";  // Reset total price
+      document.getElementById("empty-message").style.display = "block";  // Show empty message
+    }
+  </script>
+  <noscript>
+    Sorry, Your browser does not support javaScript!
+</noscript>
+  </body>
+</html>

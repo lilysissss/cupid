@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Titan+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="icon" type="image" href="logo.png">
+    <title>pick up ꒰｡•̤༝•̤｡꒱🎀🌷</title>
+    <style>
+
+        body{
+          font-family: Delius;
+     }
+
+        nav {
+            background-color: #ffbac7;
+            position:sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type:none;
+            padding: 2rem 0;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+            position:relative;
+        }
+        nav ul li a {
+            color:#000000;
+            text-decoration: none;
+            font-size: 2.1rem;
+            font-weight: 500;
+            padding: 0.8rem 1.3rem;
+            transition: all 0.3s ease;
+            border-radius: 20px;
+            font-family: Balsamiq Sans;
+        }
+        nav ul li a:hover {
+            background-color: rgb(203, 85,130);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.621);
+        }
+        nav ul li a::after{
+            content: "";
+            position:absolute;
+            width:0;
+            height: 6px;
+            bottom: 0;
+            left:0;
+            transition: 0.3s ease;
+        }
+        nav ul li a:hover::after {
+            width:100%;
+        }
+        .navlogo {
+            display:flex;
+            width:150px;
+            height:50px;
+        }
+
+        .submit:hover {
+    background-color: #e578a0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.621);
+}
+.submit {
+    margin-left: 50px; width: 150px; height: 50px; border-radius: 20px; margin-top: 0px; float: right; margin-right: 200px; background-color: #ffbac7; font-size:20px; color:#fff; border: none; 
+}
+       
+    </style>
+</head>
+<body style="background-color: #ffe5d9;">
+ <div>
+    <nav>    
+    <ul>
+        <li ><a href="home.html">Home</a></li>
+        <li><a href="menunavi.html">Menu</a></li>
+        <li><a href="contact2.html">Contact</a></li>
+        <li><a href="mycart.html"> My Cart(<span id="cart-count">0</span>)</a></li>
+    </ul>
+    </nav>
+    </div>
+
+    <h1 style="margin-left:200px; font-size: 40px;">Pick up</h1>
+    <div>
+    <img style=" height: 500px;
+     width: 400px;
+    float: left;
+    margin-left: 200px;
+    margin-right: 0px;
+    margin-bottom: 50px;" src="cupidmap.jpg" alt="map">
+    </div>
+    <div style=" height: 500px;
+     width: 400px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 150px;">
+        <h1>Our Bakery Location</h1>
+           <address>Treasure Net ICT & Business Training Center<br>
+            No.4, Thuka Street, Hpa-an, Kayin State<br>
+            Zipcode 13011,<br>
+            treasurenet.mm@gmail.com<br>
+            09.965136417, 058.22525</address><hr>
+
+            <h1>Thank You</h1>
+<p style="text-align: left; font-size: 25px;">From our oven to your heart, <br> Thank you for letting us be part of your day. Grateful for every bite you take. Sweet moments, Humble thanks-thank you every customer who walks in.</p>
+
+<form id="emailForm" action="https://formsubmit.co/nanthetsuswetun@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Cart Items from Cupid's bakery">
+        <input type="hidden" name="cartContents" id="cartContents">
+        <input type="hidden" name="_captcha" value="false">
+        <button class="submit" type="submit">Submit!</button>
+    </form>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="logo.png">
+    <title>Cupid's menu ₊˚🎀૮₍ ᵔ ᵕ ᵔ ₎ა💘˚₊˖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Titan+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+ <style>
+     @media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive for mobile (<= 600px) */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .product {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .container-eg-btn-4 {
+    flex-direction: column;
+  }
+
+  .container-eg-btn-4 .button-4 {
+    width: 80%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+     body{
+          font-family: Delius;
+          background-color: #ffe5d9;
+     }
+     nav {
+    background-color: #ffbac7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1.5rem 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+nav ul li a {
+    color:#000000;
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding: 0.8rem 1.3rem;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    font-family: Balsamiq Sans;;
+}
+
+/* Navigation hover animation */
+nav ul li a:hover {
+       background-color: rgb(203, 85, 130);
+    transform: translateY(-3px);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.621);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 6px;
+    background: var(--primary);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+@media screen and (max-width: 356px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #f3c1c6;
+    border-radius: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #d46a6a;
+    color: white;
+  }
+}
+    .product{
+            background: #ffbac7;
+            border: 4px outset rgb(203, 85, 130);
+            border-radius: 10px;
+            box-shadow: 3px 6px 14px #9b3896;
+            padding: 20px;
+            text-align: left;
+            color: #581538;
+        }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+
+        .container-eg-btn-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 10px;
+    padding: .5em;
+    line-height: normal;
+}
+.container-eg-btn-4 .button {
+    background: #af40ff;
+    margin: 15px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;        
+    font-weight: 700;
+}                                                                       
+        .container-eg-btn-4 .button-4 {         
+    background-image: linear-gradient(to right, #B24592 0%, #F15F79 51%, #B24592 100%);
+    border-radius: 30px;
+    background-size: 400% auto;
+    text-align: center;
+    padding: 15px 20px;
+}
+.container-eg-btn-4 .button-4:hover {
+    background-position: right center;
+    transform: translateY(-0.25em);
+    box-shadow: 0 10px 9px -3px #6f061961;
+}
+.container-eg-btn-4 .button-4:active {
+    transform: translateY(0);
+    box-shadow: unset;
+}
+.headfoot {
+    background-color: #ffbac7;
+    color: #581538;
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box; /* ✅ padding တွေထဲမှာပါအောင် */
+    margin: 0; /* ✅ unnecessary margin ရှိရင်ဖျက် */
+}
+ </style>
+</head>
+<body>
+     <div>
+    <nav>    
+    <ul>
+        <li ><a href="home.html">Home</a></li>
+        <li><a href="menunavi.html">Menu</a></li>
+        <li><a href="contact2.html">Contact</a></li>
+        <li><a href="mycart.html"> My Cart(<span id="cart-count">0</span>)</a></li>
+    </ul>
+    </nav>
+    </div>
+    <div>
+          <h1 style="color:#581538; font-size: 40px;">Menu you can order from our shop</h1>
+          <h1 style="color:#581538;" ;>Cake</h1>
+          <div class="grid-container">
+               <div class="product">
+                    <a><img src="tiremitsucake.png" alt="cake1" width="400px" height="450px"></a>
+                    <h3>Tiramihsu cake</h3>
+                    <h4>$5.73(for 1 pie)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Tiramihsu cake', 5.73)"><strong>Order</strong></button> </div>
+               </div>
+               <div class="product">
+                    <a><img src="strawberrydomicake.png" alt="cake2"></a>
+                    <h3>Strawberry Dome</h3>
+                    <h4>$6.21 (for 1 set)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Strawberry Dome', 6.21)"><strong>Order</strong></button> </div>
+               </div>
+               <div class="product">
+                    <a><img src="chocolatevelvetcake.png" alt="cake3"></a>
+                    <h3>Black Velvet</h3>
+                    <h4>$3.82(for 1 pie)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Black Velvet', 3.82)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="pinkycupidcake.png" alt="cake4"></a>
+                    <h3>Pinky Cupid Cake</h3>
+                    <h4>$14.33(for 1 set)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Pinky Cupid cake', 14.33)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="bananapuddingcake.png" alt="cake5"></a>
+                    <h3>Banana pudding cake</h3>
+                    <h4>$2.87(for 1 pie)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Banana pudding cake', 2.87)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="vanilacake.png" alt="cake6"></a>
+                    <h3>Classic Vanilla cake</h3>
+                    <h4>$2.39(for 1 pie)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Classic Vanilla cake', 2.39)"><strong>Order</strong></button></div>
+               </div>
+          </div>
+               <hr>
+          <h1 style="color:#581538;">Donut</h1>
+          <div class="grid-container">
+               <div class="product">
+                    <a><img src="vaniladount.png" alt="donut1"></a>
+                    <h3>Vanilla Rainbow</h3>
+                    <h4>$1.43(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                   <button class="button-4" onclick="addToCart('Vanilla Rainbow', 1.43)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="choconirvanadount.png" alt="cake1"></a>
+                    <h3>Choco Nirvana</h3>
+                    <h4>$2.15(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                   <button class="button-4" onclick="addToCart('Chaco Nirvana', 2.15)"><strong>Order</strong></button> </div>
+               </div>
+               <div class="product">
+                    <a><img src="strawberrydount.png" alt="cake1"></a>
+                    <h3>Sweety Strawberry milk</h3>
+                    <h4>$1.67(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Sweety Strawberry milk', 1.67)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="rockdount.png" alt="cake1"></a>
+                    <h3>Rock Road</h3>
+                    <h4>$2.39(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Rock Road', 2.39)"><strong>Order</strong></button> </div>
+               </div>
+          </div>
+          <hr>
+          <h1 style="color:#581538;">Bread</h1>
+          <div class="grid-container">
+               <div class="product">
+                    <a><img src="croissantbread.png" alt="Bread1"></a>
+                    <h3>Croissant</h3>
+                    <h4>$2.39(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Croissant', 2.39)"><strong>Order</strong></button> </div>
+               </div>
+               <div class="product">
+                    <a><img src="ryebread.png" alt="Bread3"></a>
+                    <h3>Rye</h3>
+                    <h4>$2.87(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Rye', 2.87)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="frenchbread.png" alt="Bread3"></a>
+                    <h3>Baguette</h3>
+                    <h4>$2.39(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Baguette', 2.39)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="milkbread.png" alt="Bread2"></a>
+                    <h3>Milk Bread</h3>
+                    <h4>$0.96(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Milk Bread', 0.96)"><strong>Order</strong></button> </div>
+               </div>
+          </div>
+          <hr>
+          <h1 style="color:#581538;">Dessert</h1>
+          <div class="grid-container">
+               <div class="product">
+                    <a><img src="waffle.png" alt="des8"></a>
+                    <h3>Waffle</h3>
+                    <h4>$3.82(for each one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Waffle', 3.82)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="macroon.png" alt="des5"></a>
+                    <h3>Macron</h3>
+                    <h4>$9.55</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Macron', 9.55)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="swissroll.png" alt="des3"></a>
+                    <h3>swiss roll</h3>
+                    <h4>$2.63(for big one)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('swiss roll', 2.63)"><strong>Order</strong></button> </div>
+               </div>
+               <div class="product">
+                    <a><img src="pie.png" alt="des4"></a>
+                    <h3>Apple Pie</h3>
+                    <h4>$3.58(for 1 set)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Apple Pie', 3.58)"><strong>Order</strong></button> </div>
+               </div>
+               <div class="product">
+                    <a><img src="brownies.png" alt="des2"></a>
+                    <h3>Browies</h3>
+                    <h4>$2.39(for one each)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Browies', 2.39)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="pancake.png" alt="des6"></a>
+                    <h3>Pancake</h3>
+                    <h4>$2.87(for 1 set)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Pancake', 2.87)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="cupcake.png" alt="des7"></a>
+                    <h3>Cupcake</h3>
+                    <h4>$1.43(for one each)</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Cupcake', 1.43)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="cookies.png" alt="des1"></a>
+                    <h3>Cookie</h3>
+                    <h4>1.91<br>(for 1set)"include 6 cookies"</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Cookie', 1.91)"><strong>Order</strong></button></div>
+               </div>
+          </div> 
+          <hr>
+          <h1 style="color:#581538;">Ice-cream</h1>
+          <div class="grid-container">
+               <div class="product">
+                    <a><img src="chocolateicecream.png" alt="ic1"></a>
+                    <h3>Chacolate</h3>
+                    <h4>$0.96</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Chocolate ice cream', 0.96)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="strawberryicecream.png" alt="ic1"></a>
+                    <h3>Strawberry</h3>
+                    <h4>$0.96</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Strawberry ice cream', 0.96)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="vanilaicecream.png" alt="ic1"></a>
+                    <h3>Vanilla</h3>
+                    <h4>$0.96</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Vanilla ice cream', 0.96)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="chocchip.png" alt="ic1"></a>
+                    <h3>Choc chip</h3>
+                    <h4>$0.96</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Choc chip ice cream', 0.96)"><strong>Order</strong></button></div>
+               </div>
+          </div> 
+          <hr>
+          <h1 style="color:#581538;">Drink & Smoothie</h1>
+          <div class="grid-container">
+               <div class="product">
+                    <a><img src="machadrink.png" alt="c1"></a>
+                    <h3>Matcha Latte</h3>
+                    <h4>$1.91</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Matcha Latte', 1.91)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="caramellatte.png" alt="c2"></a>
+                    <h3>Caramel Latte</h3>
+                    <h4>$1.51</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Caramel Latte', 1.51)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="missberry.png" alt="c3"></a>
+                    <h3> Mixed berry Smoothie</h3>
+                    <h4>$2.39</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Mixed berry Smoothie', 2.39)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="cherry.png" alt="c4"></a>
+                    <h3>Cherry Vanilla Smoothie</h3>
+                    <h4>$2.39</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Cherry Vanilla Smoothie', 2.39)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="brown.png" alt="c5"></a>
+                    <h3>BrownSugar Milktea</h3>
+                    <h4>$1.67</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('BrownSugar Milktea', 1.67)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="taro.png" alt="c6"></a>
+                    <h3>Taro Milktea</h3>
+                    <h4>$1.43</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Taro Milktea', 1.43)"><strong>Order</strong></button></div>
+               </div>
+               <div class="product">
+                    <a><img src="americano.png" alt="c7"></a>
+                    <h3>Americano</h3>
+                    <h4>$1.67</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Americano', 1.67)"><strong>Order</strong></button> </div>
+               </div>
+               <div class="product">
+                    <a><img src="cuppachino.png" alt="c8"></a>
+                    <h3>Cuppachino</h3>
+                    <h4>$1.91</h4>
+                    <div class="container-eg-btn-4 uf-border">
+                    <button class="button-4" onclick="addToCart('Cuppachino', 1.91)"><strong>Order</strong></button></h2> 
+               </div>
+     </div>
+               
+
+             
+                     <script>
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function addToCart(productName, productPrice) {
+    cart.push({ name: productName, price: productPrice });
+    localStorage.setItem("cart", JSON.stringify(cart)); // Store updated cart
+    document.getElementById('cart-count').innerText = cart.length;
+    alert(productName + " has been added to your cart.");
+  }
+</script>
+
+<noscript>
+    Sorry, Your browser does not support javaScript!
+</noscript>
+               
+</body>
+</html>
